@@ -1,0 +1,85 @@
+\documentclass[12pt, toc=flat]{kuthesis}   
+
+\setlength{\parindent}{12pt}
+
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{mparhack} 
+%\usepackage{nomencl}
+%\usepackage{acro}
+
+%Bibliography
+%\usepackage{natbib}
+
+\hypersetup{
+  colorlinks=true,
+  citecolor=orange,
+  linkcolor=purple,
+  urlcolor=blue,
+  pdftitle="Literature Review of Text-to-Speech",
+  pdfauthor=rupak,
+  pdfsubject=Master's Thesis,
+  pdfkeywords={ME. CSE, NLP, TTS, KU, Research},
+  unicode=true
+}
+
+%Details 
+
+
+\title{Literature Review \\ of \\
+        Text-to-Speech}
+
+\author{Rupak Raj Ghimire}
+\college{ Department of Computer Science and Engineering }
+
+
+\degree{Masters in Computer Engineering}
+\degreedate{2012-2014}
+ 
+
+\begin{document}
+
+\baselineskip=18pt plus1pt
+
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+%Title Page
+\maketitle 
+
+\begin{romanpages}
+
+% \include{dedication} 
+% \include{acknowlegements}   
+\include{abstract}
+
+
+\tableofcontents 
+\listoffigures 
+\listoftables 
+
+
+  
+\end{romanpages}
+
+
+\include{chapter1}
+\include{chapter2}
+
+ 
+\include{appendix1}
+\include{appendix2}
+
+%Bibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+
+ 
+%Put your reference type
+\bibliographystyle{plain}
+%\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}
